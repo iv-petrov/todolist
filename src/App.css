@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #a7c1f6;
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  -webkit-text-stroke: 2px #000000;
+}
+
+.sel-form {
+  max-width: 450px;
+  margin: 40px auto;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  font-size: 14px;
+  color: #333;
+  align-items: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
