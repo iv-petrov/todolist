@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import TodoList from './Components/ToDoList';
+import ToDoList from './Components/ToDoList';
 
 function App() {
   const [todos, setTodos] = useState([])
@@ -23,15 +23,10 @@ function App() {
         <h1>Список дел</h1>
       </header>
       <div>
-        <form className="list-form">
+        <form className="list-form" onClick={(e) => e.preventDefault()}>
           <ul className="dotted-list">
             {todos.map((item,index) => (
-              <li key={index}>
-                <span className="number">{index+1}</span>
-                <span className="text">{item}</span>
-                <span className="dots"></span>
-                <span><button onClick={() => deleteTask(index)}>Удалить</button></span>
-              </li>
+              <ToDoList index={index} name={item} onClick={() => deleteTask(index)} />
             ))}
           </ul>
         </form>
